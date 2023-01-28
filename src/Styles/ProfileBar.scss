@@ -1,0 +1,32 @@
+@import "../App.scss";
+
+.profile-container {
+    @include startingContainer();
+    border-right: $rainFocusGray;
+    justify-content: space-between;
+    width: 70px;
+    align-items: center;
+    border-right: 2px solid $rainFocusGrayLight;
+    box-sizing: border-box;
+}
+
+.picture-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    @include profileBarBox();
+}
+
+.icon {
+    @include profileBarBox();
+}
+
+.user {
+    @include circle();
+    @include profileBarBox();
+    @include center-one();
+    color: white;
+    background-color: $rainFocusGrayDark;
+}

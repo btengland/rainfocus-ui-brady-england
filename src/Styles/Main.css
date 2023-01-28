@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+}
+
+h4 {
+  font-family: "Inter", sans-serif;
+}
+
+h5 {
+  font-weight: 600;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  background-color: #5c00dc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+  font-family: "Inter", sans-serif;
+}
+
+.App {
+  display: flex;
+}
+
+.main-container {
+  padding: 48px;
+}
+
+.top-of-main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-of-main {
+  display: flex;
+  height: 89px;
+}
+
+.main-icon {
+  width: 89px;
+  height: 89px;
+}
+
+.top-info {
+  margin-left: 10px;
+  margin-top: -23px;
+}
+
+.date-big {
+  margin-top: -8px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+.place-big {
+  margin-top: 3px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+.event-setup {
+  border-bottom: 2px solid rgb(218, 218, 218);
+  height: 105px;
+  margin-top: 40px;
+}
+
+.attendee {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  margin-top: 10px;
+}
+
+.step-title {
+  display: flex;
+  align-items: center;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  margin-right: 5px;
+  height: 30px;
+}
+
+.base {
+  display: flex;
+  align-items: center;
+  color: gray;
+  margin: 0px;
+  height: 30px;
+}
+
+.step-one-box {
+  display: flex;
+  height: 118px;
+  width: 1120px;
+  border: 2px solid rgb(218, 218, 218);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.general {
+  width: 250px;
+  margin-left: 50px;
+}
+
+.general-left {
+  width: 250px;
+}
+
+.set-title {
+  margin: 0px;
+}
+
+.set-paragraph {
+  margin: 0px;
+  margin-top: 5px;
+  font-size: 13px;
+  color: gray;
+}
+
+.step-two-container {
+  margin-top: 20px;
+}
+
+.base-box {
+  width: 350px;
+  height: 120px;
+  border: 2px solid rgb(218, 218, 218);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.step-two-box {
+  display: flex;
+  justify-content: space-between;
+  height: 118px;
+  width: 1120px;
+  box-sizing: border-box;
+}
+
+.base-box-two {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 120px;
+  border: 2px solid rgb(218, 218, 218);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.arrow-box {
+  display: flex;
+}
+
+.arrow {
+  margin-right: 10px;
+}
+
+.plus-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.plus {
+  height: 25px;
+  width: 25px;
+}
+
+.step-three-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1522px) {
+  .step-one-box {
+    height: 118px;
+    width: 900px;
+  }
+  .step-two-box {
+    height: 118px;
+    width: 900px;
+  }
+  .base-box {
+    width: 250px;
+  }
+  .base-box-two {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 1312px) {
+  .step-one-box {
+    height: 150px;
+    width: 700px;
+  }
+  .step-two-box {
+    width: 700px;
+  }
+  .base-box {
+    width: 200px;
+  }
+  .base-box-two {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 910px) {
+  .step-three-container {
+    width: 400px;
+  }
+  .step-one-container {
+    width: 400px;
+  }
+  .step-two-container {
+    width: 400px;
+  }
+  .event-setup {
+    width: 500px;
+  }
+  .step-one-box {
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    width: 300px;
+    margin-left: 50px;
+  }
+  .general {
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+  .step-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .step-two-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+  }
+  .base-box {
+    width: 300px;
+  }
+  .base-box-two {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    width: 300px;
+  }
+  .main-icon {
+    height: 150px;
+    margin-top: -30px;
+  }
+  .top-of-main-container {
+    width: 500px;
+    height: 130px;
+  }
+  .base-box-two-container {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    width: 400px;
+  }
+}/*# sourceMappingURL=Main.css.map */

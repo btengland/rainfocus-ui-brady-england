@@ -1,0 +1,117 @@
+//Resets
+p { margin:0 }
+
+body {
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+//Side bar view height
+$viewHeight: 120vh;
+
+//Colors
+$rainFocusGray: gray;
+$rainFocusGrayDark: rgb(87, 87, 87);
+$rainFocusGrayLight: rgb(218, 218, 218);
+$search: #f5f5f5f5;
+$rainFocusPurpleLight: #5c00dc16;
+$rainfocusPurple: #5c00dc;
+
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+$font: 'Inter', sans-serif;
+
+//Basic settings
+h1 {
+    font-family: $font;
+}
+
+h2 {
+    font-family: $font;
+}
+
+h3 {
+    font-family: $font;
+}
+
+h4 {
+    font-family: $font;
+}
+
+h5 {
+    font-weight: 600;
+}
+
+p {
+    font-family: $font;
+}
+
+button {
+    background-color: $rainfocusPurple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    font-family: $font;
+}
+
+//Circles
+@mixin circle {
+    border-radius: 30px;
+}
+
+@mixin center-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin circle-summit {
+    border-radius: 30px;
+    background-color: $rainFocusGray;
+    width: 25px;
+    height: 25px;
+}
+
+//ProfileBar Boxes
+@mixin profileBarBox {
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+}
+
+//Every components's starting container
+@mixin startingContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+//SideBar bubbles
+@mixin sideBarBubbles {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+//Align Items Center
+@mixin align-center {
+    display: flex;
+    align-items: center;
+}
+
+//The main box
+@mixin main-box {
+    width: 350px;
+    height: 120px;
+    border: 2px solid $rainFocusGrayLight;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+//App.js
+.App {
+    display: flex;
+}

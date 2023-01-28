@@ -1,0 +1,161 @@
+@import "../App.scss";
+
+.side-container {
+    @include startingContainer();
+    padding: 15px;
+    border-right: 2px solid $rainFocusGrayLight;
+    box-sizing: border-box;
+}
+
+.side-summit {
+    font-family: $font;
+    margin-top: -3px;
+}
+
+.date {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: -5px;
+    margin-bottom: 20px;
+}
+
+//Search bar
+.search-container {
+    display: flex;
+    height: 25px;
+    width: 210px;
+    border-radius: 2px;
+    align-items: center;
+    font-size: 13px;
+    font-family: $font;
+    background-color: $search;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.search-word {
+    margin-left: 10px;
+    margin-bottom: -3px;
+}
+
+//Magnify icon in search bar
+.magGlass {
+    position:relative;
+    display:inline-block;
+    background: $search;
+    border-radius: 30px;
+    height: 6px;
+    width: 6px;
+    border: 2px solid #888;
+    
+    &:after {
+      content: "";
+      height: 2px;
+      width: 6px;
+      background: #888;
+      position:absolute;
+      top:7px;
+      left:5px;
+      transform: rotate(45deg);
+    }
+} 
+
+.circle-summit {
+    @include circle-summit();
+}
+
+.circle-summit-selected {
+    @include circle-summit();
+    background-color: $rainfocusPurple;
+}
+
+.space-word {
+    margin-left: 10px;
+    font-weight: 500;
+    color: $rainFocusGray;
+    font-family: $font;
+}
+
+.bubble-container {
+    margin-bottom: -15px;
+    @include sideBarBubbles();
+}
+
+.bubble-container-selected {
+    height: 40px;
+    border-radius: 5px;
+    background-color: $rainFocusPurpleLight;
+    margin-bottom: -15px;
+    margin-left: -10px;
+    padding-left: 10px;
+    @include sideBarBubbles();
+}
+
+.selected-options {
+    margin-left: 40px;
+    margin-top: 25px;
+    margin-bottom: -15px;
+    color: $rainFocusGray;
+}
+
+.inside-word {
+    margin-top: -10px;
+}
+
+@media only screen and (max-width: 1141px) {
+    
+    .side-container {
+        display: none;
+    }
+    
+    .side-summit {
+        display: none;
+    }
+    
+    .date {
+        display: none;
+    }
+    
+    //Search bar
+    .search-container {
+        display: none;
+    }
+    
+    .search-word {
+        display: none;
+    }
+    
+    //Magnify icon in search bar
+    .magGlass {
+        display: none;
+    } 
+    
+    .circle-summit {
+        display: none;
+    }
+    
+    .circle-summit-selected {
+        display: none;
+    }
+    
+    .space-word {
+        display: none;
+    }
+    
+    .bubble-container {
+        display: none;
+    }
+    
+    .bubble-container-selected {
+        display: none;
+    }
+    
+    .selected-options {
+        display: none;
+    }
+    
+    .inside-word {
+        display: none;
+    }
+    
+  }
